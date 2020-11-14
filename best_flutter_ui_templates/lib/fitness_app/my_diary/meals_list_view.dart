@@ -119,14 +119,14 @@ class MealsView extends StatelessWidget {
                               offset: const Offset(1.1, 4.0),
                               blurRadius: 8.0),
                         ],
-                        gradient: LinearGradient(
-                          colors: <HexColor>[
-                            HexColor(mealsListData.startColor),
-                            HexColor(mealsListData.endColor),
-                          ],
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                        ),
+                        // gradient: LinearGradient(
+                        //   colors: <HexColor>[
+                        //     HexColor(mealsListData.startColor),
+                        //     HexColor(mealsListData.endColor),
+                        //   ],
+                        //   begin: Alignment.topLeft,
+                        //   end: Alignment.bottomRight,
+                        // ),
                         borderRadius: const BorderRadius.only(
                           bottomRight: Radius.circular(8.0),
                           bottomLeft: Radius.circular(8.0),

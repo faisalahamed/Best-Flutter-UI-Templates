@@ -93,14 +93,14 @@ class _WaveViewState extends State<WaveView> with TickerProviderStateMixin {
                       bottomLeft: Radius.circular(80.0),
                       bottomRight: Radius.circular(80.0),
                       topRight: Radius.circular(80.0)),
-                  gradient: LinearGradient(
-                    colors: [
-                      FitnessAppTheme.nearlyDarkBlue.withOpacity(0.2),
-                      FitnessAppTheme.nearlyDarkBlue.withOpacity(0.5)
-                    ],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                  ),
+                  // gradient: LinearGradient(
+                  //   colors: [
+                  //     FitnessAppTheme.nearlyDarkBlue.withOpacity(0.2),
+                  //     FitnessAppTheme.nearlyDarkBlue.withOpacity(0.5)
+                  //   ],
+                  //   begin: Alignment.topLeft,
+                  //   end: Alignment.bottomRight,
+                  // ),
                 ),
               ),
               clipper: new WaveClipper(animationController.value, animList1),
@@ -109,14 +109,14 @@ class _WaveViewState extends State<WaveView> with TickerProviderStateMixin {
               child: new Container(
                 decoration: BoxDecoration(
                   color: FitnessAppTheme.nearlyDarkBlue,
-                  gradient: LinearGradient(
-                    colors: [
-                      FitnessAppTheme.nearlyDarkBlue.withOpacity(0.4),
-                      FitnessAppTheme.nearlyDarkBlue
-                    ],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                  ),
+                  // gradient: LinearGradient(
+                  //   colors: [
+                  //     FitnessAppTheme.nearlyDarkBlue.withOpacity(0.4),
+                  //     FitnessAppTheme.nearlyDarkBlue
+                  //   ],
+                  //   begin: Alignment.topLeft,
+                  //   end: Alignment.bottomRight,
+                  // ),
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(80.0),
                       bottomLeft: Radius.circular(80.0),

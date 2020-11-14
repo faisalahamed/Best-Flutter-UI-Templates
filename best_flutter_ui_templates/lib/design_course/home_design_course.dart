@@ -101,28 +101,31 @@ class _DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
   Widget getPopularCourseUI() {
     return Padding(
       padding: const EdgeInsets.only(top: 8.0, left: 18, right: 16),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Text(
-            'Popular Course',
-            textAlign: TextAlign.left,
-            style: TextStyle(
-              fontWeight: FontWeight.w600,
-              fontSize: 22,
-              letterSpacing: 0.27,
-              color: DesignCourseAppTheme.darkerText,
+      child: Container(
+        height: 200.0,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              'Popular Course',
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: 22,
+                letterSpacing: 0.27,
+                color: DesignCourseAppTheme.darkerText,
+              ),
             ),
-          ),
-          Flexible(
-            child: PopularCourseListView(
-              callBack: () {
-                moveTo();
-              },
-            ),
-          )
-        ],
+            Flexible(
+              child: PopularCourseListView(
+                callBack: () {
+                  moveTo();
+                },
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

@@ -1,10 +1,9 @@
 import 'dart:math' as math;
 import 'package:best_flutter_ui_templates/fitness_app/fintness_app_theme.dart';
 import 'package:best_flutter_ui_templates/fitness_app/models/tabIcon_data.dart';
-import 'package:best_flutter_ui_templates/main.dart';
 import 'package:flutter/material.dart';
 
-import '../../main.dart';
+// import '../../main.dart';
 import '../models/tabIcon_data.dart';
 
 class BottomBarView extends StatefulWidget {
@@ -26,9 +25,7 @@ class _BottomBarViewState extends State<BottomBarView>
   @override
   void initState() {
     animationController = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 1000),
-    );
+        duration: const Duration(milliseconds: 1000), vsync: this);
     animationController.forward();
     super.initState();
   }
@@ -143,13 +140,13 @@ class _BottomBarViewState extends State<BottomBarView>
                       // alignment: Alignment.center,s
                       decoration: BoxDecoration(
                         color: FitnessAppTheme.nearlyDarkBlue,
-                        gradient: LinearGradient(
-                            colors: [
-                              FitnessAppTheme.nearlyDarkBlue,
-                              HexColor('#6A88E5'),
-                            ],
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight),
+                        // gradient: LinearGradient(
+                        //     colors: [
+                        //       FitnessAppTheme.nearlyDarkBlue,
+                        //       HexColor('#6A88E5'),
+                        //     ],
+                        //     begin: Alignment.topLeft,
+                        //     end: Alignment.bottomRight),
                         shape: BoxShape.circle,
                         boxShadow: <BoxShadow>[
                           BoxShadow(
@@ -213,9 +210,8 @@ class _TabIconsState extends State<TabIcons> with TickerProviderStateMixin {
   @override
   void initState() {
     widget.tabIconData.animationController = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 400),
-    )..addStatusListener((AnimationStatus status) {
+        duration: const Duration(milliseconds: 400), vsync: this)
+      ..addStatusListener((AnimationStatus status) {
         if (status == AnimationStatus.completed) {
           if (!mounted) return;
           widget.removeAllSelect();
